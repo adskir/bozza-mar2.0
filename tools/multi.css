@@ -42,3 +42,8 @@
 @media(max-width:560px){.doors.six .door,.doors.six .door.big{grid-column:span 12}}
 .portrait .ph-img{aspect-ratio:4/5;min-height:0;border-radius:220px 220px 24px 24px}
 .portrait .ph-img .ph{width:auto;aspect-ratio:auto;border-radius:6px;background:rgba(0,0,0,.25)}
+.certs{margin-top:64px;text-align:center}
+.certs .gallery{gap:20px;margin-top:28px}
+.certs .ph-img.small{min-height:0;aspect-ratio:4/3}
+.certs .sub{margin:32px auto 0;max-width:none}
+.certs .cta{justify-content:center}
