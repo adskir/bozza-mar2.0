@@ -107,8 +107,8 @@ page("lezioni-private.html","Lezioni private", hero("Lezioni Private","Lezioni p
 page("chi-sono.html","Chi sono", hero("Chi sono","Sono <em>Mar - La Criolla</em>",
  '<p class="lead">Ballerina e insegnante di Timba, salsa cubana, bachata e folklore peruviano. Sono fondatrice del progetto Timba Criolla.</p>',
  cta("Scrivimi","Informazioni")) +
- f'''<section><div class="wrap narrow"><p class="sub">Il ballo mi ha cambiato la vita e, da allora, il mio obiettivo è condividerlo con chi vuole imparare davvero, curando sia la tecnica sia l'aspetto umano. Credo fermamente che il ballo sia per tutti. La mia ispirazione nasce dalla vita di ogni giorno, dagli artisti che ammiro e dalle esperienze vissute.</p>
-<h2 style="margin-top:40px">Alcuni fatti su di me</h2></div>{facts}
+ f'''<section><div class="wrap narrow"><h2>Alcuni fatti su di me</h2><p class="sub" style="margin-top:14px">Il ballo mi ha cambiato la vita e, da allora, il mio obiettivo è condividerlo con chi vuole imparare davvero, curando sia la tecnica sia l'aspetto umano. Credo fermamente che il ballo sia per tutti. La mia ispirazione nasce dalla vita di ogni giorno, dagli artisti che ammiro e dalle esperienze vissute.</p>
+</div>{facts}
 <div class="wrap narrow"><h2 style="margin-top:40px">Certificati e premi</h2><div class="gallery">{"".join(f'<div class="ph-img small">{PH("certificato / foto premio")}</div>' for _ in range(3))}</div>
 <p class="sub" style="margin-top:28px">Sono disponibile per Workshop, show, giuria &amp; social dancing.</p><div class="cta"><a class="btn" href="organizzatori.html">Per gli organizzatori</a></div></div></section>''',"chi-sono.html")
 
