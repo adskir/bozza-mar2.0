@@ -9,8 +9,9 @@
   const m = $("#modal"), sel = $("#minterest"), f = $("#mform");
   OPTS.forEach((o) => { const e = document.createElement("option"); e.textContent = o; sel.appendChild(e); });
   $$("[data-modal]").forEach((b) => b.addEventListener("click", () => { sel.value = b.dataset.modal; $("#mtitle").textContent = b.textContent.trim(); m.showModal(); }));
+  $("#mclose").addEventListener("click", () => m.close());
+  m.addEventListener("click", (e) => { if (e.target === m) m.close(); });
   f.addEventListener("submit", (e) => {
-    if (e.submitter && e.submitter.value === "cancel") return;
     e.preventDefault(); const d = new FormData(f);
     const t = `Ciao Mar! Ti scrivo dal sito.\n• Nome: ${d.get("nome")}\n• Interesse: ${d.get("interesse")}` + (d.get("telefono") ? `\n• Telefono: ${d.get("telefono")}` : "") + (d.get("messaggio") ? `\n• ${d.get("messaggio")}` : "");
     window.open(`https://wa.me/${WA}?text=${encodeURIComponent(t)}`, "_blank"); m.close();

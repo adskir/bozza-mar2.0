@@ -36,7 +36,7 @@ def page(fname, title, body, active=None):
 </div></footer>
 <a class="wa-fab" href="https://wa.me/393444084291" target="_blank" rel="noopener" aria-label="Scrivi a Mar su WhatsApp">{wa_icon}<span>Scrivimi</span></a>
 <dialog class="modal" id="modal"><form method="dialog" class="mform" id="mform" name="contatto" data-netlify="true">
-<button class="mclose" value="cancel" aria-label="Chiudi">×</button>
+<button class="mclose" type="button" id="mclose" aria-label="Chiudi">×</button>
 <h3 id="mtitle">Scrivimi</h3><p class="msub">Lascia i tuoi dati: ti rispondo su WhatsApp.</p>
 <label>Nome<input name="nome" required autocomplete="given-name" placeholder="Il tuo nome"></label>
 <label>Telefono<input name="telefono" type="tel" autocomplete="tel" placeholder="+39 …"></label>
